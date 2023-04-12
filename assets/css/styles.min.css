@@ -9899,11 +9899,12 @@ body.loaded .section-gems .gem-image {
 
 .whitepaper{
     position: absolute; 
-    bottom: 0; 
+    bottom: -30px; 
     right: 5px; 
     background-color: white; 
     border-radius: 4px; 
     padding: 5px 8px; 
     text-transform: uppercase; 
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 22px;
 }
