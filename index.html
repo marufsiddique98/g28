@@ -46,6 +46,24 @@
 	</head>
 	<body class="">
 
+		<script>
+			var cd = new Countdown({
+				cont: document.querySelector('.cnt'),
+				date: 1993468400000,
+				outputTranslation: {
+					year: 'Years',
+					week: 'custom_string_Weeks',
+					day: 'Days',
+					hour: 'Hours',
+					minute: 'Minutes',
+					second: 'Seconds',
+				},
+				endCallback: null,
+				outputFormat: 'week|day|hour|minute|second',
+			});
+			cd.start();
+		</script>
+
 
 		
 	
@@ -337,11 +355,12 @@
 		</div>
 
 		<div class="row gutter--s--1 gutter-vertical--m--4 max-width--1200 horizontal-align--s--center">
+			<div id="countdown" style="display: flex; justify-content: center; font-size: 150%;text-align: center;"></div>
 			<div class="column--m--12of12 column--l--4of12 gutter--s--2">
 				<h3 class="font-face--plantin-light text-align--l--right">
 					<strong> Presale On <br>
 						15UTC<br>
-					14th Apr 2023<br></strong>
+					15th Apr 2023 <a target="_blank" href="https://www.pinksale.finance/launchpad/0xdf370f9F7e24D92ccb1F4EFB253Acc3AD5Ca0835?chain=BSC"><button class="presale-link">Visit</button></a><br></strong>
 					Thank you to everyone who is interested in our project. We present you a full-fledged platform created thanks to AI for earning, in which you can play, earn and even communicate completely anonymously.
 				</h3>
 			</div>
@@ -1066,6 +1085,8 @@ Of course, that's not all we're prepared to offer you, but even these small exam
 
 		<script type="text/javascript" src="assets/js/vendor.min.js"></script>
 		<script type="text/javascript" src="assets/js/scripts.min.js"></script>
+		<script type="text/javascript" src="assets/js/countdown.js"></script>
+
 	</body>
 
 </html>
